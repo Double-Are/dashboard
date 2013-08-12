@@ -67,4 +67,6 @@ Also, I would suggest setting the config.json's "testing:" to true keep from usi
 
 If e.length is undefined just switch testing: back to true if you are creating your own widgets or testing. This is meant to be run on an external monitor at all times. I feel like it's purpose is wasted if it is just a tab on your browser or just a tablet app. 
 
-Enjoy - Any questions @double_are
+I'm making this project open source in case anyone wants to create their own personal widgets, or make the project better as a whole. The project still has a few issues so I'd appreciate feedback, but I hope you enjoy "Dashboard" as much as I do.
+
+Any questions @double_are
