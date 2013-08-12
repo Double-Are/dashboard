@@ -1,14 +1,13 @@
 Dashboard - project
 =================
 
-A real-time dashboard of your favorite tweets, timeline, lists and mentions and relevant topics. 
+A real-time dashboard of your twitter timeline, lists, mentions and relevant topics. 
 
 http://doubleare.aws.af.cm/intro 
 Video (changes have been made since that version)
 
 
-
-What you need and need to know or at the least have an understanding of:
+What you need and need to know:
   
 	node.js, socket.io, javascript, html, css...but you might be able to get by regardless
 
@@ -19,7 +18,7 @@ Step One
 
 Create a twitter developer account and app if you haven't already. -> dev.twitter.com (google: create twitter app)
 
-Once you have created a developer account get the: 
+Once you have created a developer account get your from the dev area: 
 
 	"consumer_key"
 	"consumer_secret"
@@ -33,9 +32,8 @@ Step Two
 
 Open your terminal if using a Mac or Linux - find the folder location
 	
-	ls and cd are your friend
-	once found and in the folder type in node app.js
-	in your web browser run 127.0.0.1:8000
+	-ls and cd are your friend-
+	Once found, type "node app.js" and in your web browser run 127.0.0.1:8000
 
 	To use your controller use 127.0.0.1:8000/controller
 	If you want to use your controller wirelessly type in ifconfig in your ternminal, get the ip address example 
@@ -45,7 +43,7 @@ Open your terminal if using a Mac or Linux - find the folder location
 	The same address you typed in your mobile web browser needs to be the address at the top of ./js/controller.js example 
 		var socket = io.connect('http://192.168.X.X:8000');
 
-If you want to run it online, for anywhere pleasure, I would highly suggest appfog.com
+If you want to run your dashboard online, for anywhere pleasure, I would highly suggest using the appfog.com service
 
 Step Three
 ================================================================
