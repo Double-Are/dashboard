@@ -1,0 +1,13 @@
+{
+	"screen_name": "", //your twitter screen_name here 
+	"your_list_name": "dev", //pending execution
+	"weather_zip": "39759", //enter zip code here for your weather
+	"lists_count": "100", //pending execution
+	"timeline_count": "20", //pending execution
+	"mentions_count": "20",  //pending execution
+	"consumer_key": "", //insert consumer key here
+	"consumer_secret": "", //insert consumer secrect key here
+  	"access_token_key": "", //insert access token key here
+  	"access_token_secret": "", //insert access token secret here
+  	"testing": false // if you want test data instead of live data change to true
+}

@@ -1,0 +1,121 @@
+<html>
+	<head>
+
+		<title>Dashboard Controller</title>
+		
+		<!--Socket.io-->
+		<script src='./socket.io/socket.io.js'></script>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- standard viewport tag to set the viewport to the device's width
+			, Android 2.3 devices need this so 100% width works properly and
+			doesn't allow children to blow up the viewport width-->
+		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+		<!-- width=device-width causes the iPhone 5 to letterbox the app, so
+			we want to exclude it for iPhone 5 to allow full screen apps -->
+		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+		<!-- provide the splash screens for iPhone 5 and previous -->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,700' rel='stylesheet' type='text/css'>
+		<link href='controller.css' rel='stylesheet' type='text/css'>
+
+
+		<!--jQuery-->
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+
+		<script>
+
+			$(document).ready(function(){
+
+				//remove content in text area
+				$('#close').click(function(){
+					$('#newTopic').val('');
+				});
+
+			});
+
+			//setTimeout("location.reload(true);", 5000);
+
+ 			function BlockMove(event) {
+  				// Tell Safari not to move the window
+  				event.preventDefault() ;
+ 			}
+
+		</script>
+
+		<style>
+
+			
+
+		</style>
+	</head>
+
+	<body ontouchmove="BlockMove(event);">
+
+		<div id='response'>Clicked</div><!-- response end -->
+
+		<div id='header' class='revSpan1'>
+			<div class='titleSecondary'>DASHBOARD</div>
+			<div id='searchBar'>
+		    	<div id='textContain'>
+		    		<textarea id='newTopic' class='span10'></textarea>
+		    	</div>
+		    	<div id='close' class='title center span2'>X</div>
+		  	</div>
+		</div><!-- header end-->
+
+		<div class='container'>
+			
+
+		  	<div id='button' class='span12 revSpan0'>
+		  		<div class='title'>Search</div>
+		  		<div class='secondary'>Tap to search anything on twitter.</div>
+		  	</div><!-- button end -->
+		  	<div id='photo' class='span12 revSpan0'>
+		  		<div class='title'>Photos</div>
+		  		<div class='secondary'>Tap to search photos on twitter.</div>
+		  	</div><!-- photo end -->
+		  	<div id='expand' class='span12 revSpan0'>
+		  		<div class='title'>Expand</div>
+		  		<div class='secondary'>Display the second view. (Timeline/Mentions/Trends)</div>
+		  	</div><!-- expand end -->
+
+		</div><!-- container end -->
+
+		  	<div id='player'>
+			  	<div class='span12'>
+			  		<ul>
+			  			<li class='span4'>
+			  				<div id='previous' class='span11 revSpan0 center'>
+			  					<img src='PlayPrevious.svg'>
+			  				</div><!-- previous end -->
+			  			</li>
+			  			<li class='span4'>
+						  	<div id='pause' class='span11 revSpan0 center'>
+						  		<img src='PlayPause.svg'>
+						  	</div><!-- pause -->
+						</li>
+						<li class='span4'>
+							<div id='next' class='span11 revSpan0 center'>
+								<img src='PlayNext.svg'>
+							</div><!-- next end -->
+						</li>
+				 	</ul>
+			 	</div>
+
+			 	<div id='current' class='span2 center'>0</div>
+			 	<div class='span8 center'>
+				  <div id='scrobbler'></div>
+				  <div id='circle'></div>
+				</div>
+				<div id='all' class='span2 center'>--</div>
+			</div><!-- player end -->
+
+		<!-- SOCKETS, FUNCTIONS, OBJECTS... OH MY -->
+		<script type='text/javascript' src='controller.js'></script>
+
+	</body>
+
+</html>

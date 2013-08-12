@@ -1,0 +1,218 @@
+<html>
+	<head>
+
+		<title>Dashboard</title>
+
+		<!--Socket.io-->
+		<script src='./socket.io/socket.io.js'></script>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<!-- standard viewport tag to set the viewport to the device's width, Android 2.3 devices need this so 100% width works properly and doesn't allow children to blow up the viewport width-->
+		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+		<!-- width=device-width causes the iPhone 5 to letterbox the app, so we want to exclude it for iPhone 5 to allow full screen apps -->
+		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+		<!-- provide the splash screens for iPhone 5 and previous -->
+
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+		<link href='master.css' rel='stylesheet' type='text/css'>
+
+		<!--jQuery-->
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+
+		<script>
+
+			$(document).ready(function(){
+
+				function BlockMove(event) {
+	  				// Tell Safari not to move the window
+	  				event.preventDefault();
+	 			}
+
+
+				$(document).on('click', 'a', function (e){
+
+					var href = $(this).attr('href');
+
+					$('#middleBox').attr('src', href);
+					$('#loadWebpage').css('z-index', '5000');
+
+					e.preventDefault();
+				});
+
+	 		});
+
+		</script>
+		
+	</head>
+
+	<body>
+
+		<div class='container main'>
+			<div class='span9 revSpan4'>
+				<div class='container'>
+
+					<div id='profilePic' class='span3 revSpan1 center'>
+						<div id='mainPicture' class='span12 revSpan3'></div>
+						<div id='mainName' class='span12 revSpan1'></div>
+					</div><!--profilePic end-->
+
+					<div id='weather' class='span9 revSpan1 center'>
+						<ul id='lineForecast'>
+							<li class='span3 breakBox'>
+								<div class='span12 revSpan3 top center breakBox'></div>
+								<div class='span12 revSpan1 bottom center breakBox'>Temp</div>
+							</li>
+							<li class='span3 breakBox'>
+								<div class='span12 revSpan3 top center breakBox'></div>
+								<div class='span12 revSpan1 bottom center breakBox'>Temp</div>
+							</li>
+							<li class='span3 breakBox'>
+								<div class='span12 revSpan3 top center breakBox'></div>
+								<div class='span12 revSpan2 bottom center breakBox'>Temp</div>
+							</li>
+							<li class='span3 breakBox'>
+								<div class='span12 revSpan3 top center breakBox'></div>
+								<div class='span12 revSpan2 bottom center breakBox'>Temp</div>
+							</li>
+							<!--<li class='span2'>
+								<div class='span12 revSpan2 top'></div>
+								<div class='span12 revSpan2 bottom'>Temp</div>
+							</li>
+							<li class='span2'>
+								<div class='span12 revSpan2 top'></div>
+								<div class='span12 revSpan2 bottom'>Temp</div>
+							</li>-->
+						</ul>
+					</div><!--weather end-->
+					
+					<div id='tweets' class='span12 revSpan3 breakBox'>
+						<div id='twitter' class='span8 revSpan4 breakBox'></div><!--twitter end-->
+						<div id='twitterTopText' class='span8 revSpan4 breakBox'></div><!--twitterTopText end-->
+
+						<div id='time' class='span4 revSpan2'>TIME/DATE</div><!--time end-->
+
+						<div id='other' class='span4 revSpan2'>
+							Don't knock the <i>WEATHER</i>. If it didn't change once in a while, nine out of ten people couldn't start a conversation. - Kim Hubbard
+						</div><!--other end-->
+					</div>
+
+				</div>
+			</div>
+
+			<div class='span3 revSpan4'>
+
+				<div id='news' class='span12 revSpan3'>
+					<span class='bigName'>CREW</span><br>
+					<ul id='stories'></ul>
+				</div><!--news end-->
+
+				<div id='end' class='span12 revSpan1'>
+					<table>
+						<tr>
+							<td>-</td>
+							<td>http://doubleare.aws.af.cm/controller for remote access</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>Expand for more options</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>Skip & Pause Tweets with player</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								Twitter: <a href='http://www.twitter.com/Double_Are'>@Double_Are</a><br>
+								Website: <a href='http://www.darriustaylor.com'>Darrius Taylor</a></td>
+						</tr>
+					</table>
+				</div><!--end end-->
+
+			</div>
+		</div>
+
+		<div class='span12 footer'>
+			<div id='expand' class='span2 revSpan4'>
+		  		<div class='title'>Expand</div>
+		  		<div class='secondary'>Display the second view.</div>
+		  	</div><!-- expand end -->
+
+		  	<div class='span3 revSpan4 line'>
+			  	<div id='player'>
+				  	<div class='span12'>
+				  		<ul class='playerUL'>
+				  			<li class='span4'>
+				  				<div id='previous' class='span11 revSpan0 center'>
+				  					<img src='PlayPrevious.svg'>
+				  				</div>
+				  			</li>
+				  			<li class='span4'>
+							  	<div id='pause' class='span11 revSpan0 center'>
+							  		<img src='PlayPause.svg'>
+							  	</div>
+							</li>
+							<li class='span4'>
+								<div id='next' class='span11 revSpan0 center'>
+									<img src='PlayNext.svg'>
+								</div>
+							</li>
+					 	</ul><!-- playerUL end -->
+				 	</div>
+				 </div><!-- player end -->
+			</div><!-- line end -->
+
+		  	<div class='span7 revSpan4'>
+		  		<div id='current' class='span2 center'>0</div>
+			 	<div class='span8 center'>
+				  <div id='scrobbler'></div>
+				  <div id='circle'></div>
+				</div>
+				<div id='all' class='span2 center'>--</div>
+			</div>
+		</div><!-- footer end -->
+
+		<div id='hideTweets' class='span12 revSpan4'>
+			<div id='experience'><span id='mass'>DASHBOARD</span>
+				<span id='owner'> by @double_are</span></div>
+			<div class='span12 revSpan4'>
+				<div id='freezeList' class='span6 revSpan4'>
+					<span id='displayTitle'>List</span>
+					<ul id='timeline'>
+						<!--dynamically insert timeline content-->
+					</ul>
+				</div><!-- freezeList end-->
+
+				<div id='freezeMention' class='span6 revSpan4'>
+					<span id='displayTitle'>@</span>
+					<ul id='mentions'>
+						<!--dynamically insert mentions content-->
+					</ul>
+				</div><!-- freezeMention end-->
+
+				<div id='freezeTrend' class='span3 revSpan4'>
+					<span id='displayTitle'>Trends</span>
+					<div id='trends'>
+						<!--dynamically insert trends content-->
+					</div>
+				</div>
+			</div><!-- freezeTrend end-->
+		</div><!-- hideTweets end-->
+
+		<div id='loadWebpage' class='span10 revSpan4 breakBox'>
+			<iframe id='middleBox' class='span12'></iframe>
+
+			<div id='closeBox' class='span12'>
+				CLOSE
+			</div><!-- closeBox end-->
+		</div><!-- loadWebpage end-->
+
+		<input type="number" id="input" style='' value='1'/>
+
+		<!-- SOCKETS, FUNCTIONS, OBJECTS... OH MY -->
+		<script type='text/javascript' src='master.js'></script>
+
+	</body>
+</html>

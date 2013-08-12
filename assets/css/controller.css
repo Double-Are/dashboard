@@ -1,0 +1,221 @@
+body{
+	background: #3498db;
+	/*font-family: 'Didact Gothic', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.container{
+	padding: 5%;
+	width: 90%;
+}
+.span1{
+	float: left;
+	width: 8.33%;
+}
+.span2{
+	float: left;
+	width: 16.67%;
+}
+.span3{
+	float: left;
+	width: 25%;
+}
+.span4{
+	float: left;
+	width: 33.33%
+}
+.span5{
+	float: left;
+	width: 41.67%;
+}
+.span6{
+	float: left;
+	width: 50%;
+}
+.span7{
+	float: left;
+	width: 58.33%
+}
+.span8{
+	float: left;
+	width: 66.67%;
+}
+.span9{
+	float: left;
+	width: 75%;
+}
+.span10{
+	float: left;
+	width: 83.33%;
+}
+.span11{
+	float: left;
+	width: 91.67%;
+}
+.span12{
+	float: left;
+	width: 100%;
+}
+
+.revSpan0{
+	height: 12.67%;
+}
+
+.revSpan1{
+	height: 25%;
+}
+.revSpan2{
+	height: 50%;
+}
+.revSpan3{
+	height: 75%;
+}
+.revSpan4{
+	height: 100%;
+}
+
+.revSpan1, .revSpan2, .revSpan3, .revSpan4{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12{
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#response{
+	background: #eee; 
+	font-size: 35px; 
+	position: absolute; 
+	bottom: 0; 
+	padding: 5%; 
+	width: 90%; 
+	z-index: 100; 
+	opacity: 0.9; 
+	display: none;
+}
+
+#header{
+	background: #2980b9; 
+	float:left; 
+	padding: 5%; 
+	width: 100%;
+}
+
+#searchBar{
+	width: 100%;
+}
+
+#textContain{
+	width: 100%;
+}
+
+#newTopic{
+	font-size: 35px;
+	margin: 0;
+	padding: 0px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	resize: none;
+	max-height: 48px;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+#close{
+	background: #34495e;
+	color: #fff;
+	font-size: 24px;
+	padding: 10px 0;
+	max-height: 48px;
+}
+
+#button{
+
+}
+
+.title{
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.titleSecondary{
+	font-size: 25px;
+}
+
+.secondary{
+	font-size: 11px;
+}
+
+.center{
+	text-align: center;
+}
+
+.bottomBorder{
+	border-bottom: 1px solid #34495e;
+}
+
+.white{
+	color: #eee;
+}
+
+#scrobbler{
+	background: #2c3e50;
+	border-radius: 15px;
+	height: 13px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #888;
+	width: 100%;
+	background-image: -webkit-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For Chrome and Safari */
+	background-image:    -moz-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For old Fx (3.6 to 15) */
+	background-image:     -ms-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For pre-releases of IE 10*/
+	background-image:      -o-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For old Opera (11.1 to 12.0) */ 
+	background-image:         linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* Standard syntax; must be last */
+	opacity: 0.7;
+}
+
+#circle{
+	background: #eee;
+	border-radius: 50%;
+	width: 25px;
+	height:25px;
+	margin-top: -20px;
+	position: relative;
+	margin-left: -12.5px;
+
+	-moz-box-shadow: 0 0 5px #333;
+	-webkit-box-shadow: 0 0 5px #333;
+	box-shadow: 0 0 5px #333;
+}
+
+ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#player{
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	width: 100%;
+	background: #eee;
+	background-image: -webkit-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For Chrome and Safari */
+	background-image:    -moz-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For old Fx (3.6 to 15) */
+	background-image:     -ms-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For pre-releases of IE 10*/
+	background-image:      -o-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For old Opera (11.1 to 12.0) */ 
+	background-image:         linear-gradient(-45deg, #fff 15%, #eee 85%); /* Standard syntax; must be last */
+	opacity: 0.7;
+}

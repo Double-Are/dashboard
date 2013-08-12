@@ -1,0 +1,869 @@
+/*media query*/
+		@media only screen and (min-width: 600px){
+			body{
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			a{
+				color: #2980b9;
+				text-decoration: none;
+			}
+
+			a:hover{
+				color: #eee;
+			}
+
+			.container{
+				background: #eee;
+				float: left;
+				width: 100%;
+				position: relative;
+				z-index: 100;
+				display: none;
+			}
+
+			.main{
+				height: 93%;
+			}
+
+			.footer{
+				background: #eee;
+				font-family: 'PT Sans Caption', sans-serif;
+				height: 7%;
+				padding: 0%;
+				color: #000;
+				position: absolute;
+				bottom: 0;
+				z-index: 100;
+				opacity: 1;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				display: none;
+			}
+
+			#expand{
+				background: #2980b9;
+				float: left;
+			}
+
+			#player{
+				height: auto;
+				width: 100%;
+				background-image: -webkit-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For Chrome and Safari */
+				background-image:    -moz-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For old Fx (3.6 to 15) */
+				background-image:     -ms-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For pre-releases of IE 10*/
+				background-image:      -o-linear-gradient(-45deg, #fff 15%, #eee 85%); /* For old Opera (11.1 to 12.0) */ 
+				background-image:         linear-gradient(-45deg, #fff 15%, #eee 85%); /* Standard syntax; must be last */
+				opacity: 0.7;
+				margin-top: -1%;
+			}
+
+			.playerUL{
+				float: left;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+
+			#current, #all{
+				font-size: 20px;
+				float: left;
+				margin-top: .5%;
+			}
+
+			#scrobbler{
+				background: #2c3e50;
+				border-radius: 15px;
+				height: 13px;
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #888;
+				width: 100%;
+				background-image: -webkit-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For Chrome and Safari */
+				background-image:    -moz-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For old Fx (3.6 to 15) */
+				background-image:     -ms-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For pre-releases of IE 10*/
+				background-image:      -o-linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* For old Opera (11.1 to 12.0) */ 
+				background-image:         linear-gradient(-90deg, #2c3e50 15%, #ffffff 85%); /* Standard syntax; must be last */
+				opacity: 0.7;
+				margin-top: 2%;
+			}
+
+			#circle{
+				background: #eee;
+				border-radius: 50%;
+				width: 25px;
+				height:25px;
+				margin-top: -20px;
+				position: relative;
+				margin-left: -12.5px;
+
+				-moz-box-shadow: 0 0 5px #333;
+				-webkit-box-shadow: 0 0 5px #333;
+				box-shadow: 0 0 5px #333;
+			}
+
+			.line{
+				border-left: 1px solid #aaa;
+			}
+
+			.span1{
+				float: left;
+				width: 8.33%;
+			}
+			.span2{
+				float: left;
+				width: 16.67%;
+			}
+			.span3{
+				float: left;
+				width: 25%;
+			}
+			.span4{
+				float: left;
+				width: 33.33%
+			}
+			.span5{
+				float: left;
+				width: 41.67%;
+			}
+			.span6{
+				float: left;
+				width: 50%;
+			}
+			.span7{
+				float: left;
+				width: 58.33%
+			}
+			.span8{
+				float: left;
+				width: 66.67%;
+			}
+			.span9{
+				float: left;
+				width: 75%;
+			}
+			.span10{
+				float: left;
+				width: 83.33%;
+			}
+			.span11{
+				float: left;
+				width: 91.67%;
+			}
+			.span12{
+				float: left;
+				width: 100%;
+			}
+
+			.revSpan1{
+				height: 25%;
+			}
+			.revSpan1Alt{
+				height: 15%;
+			}
+			.revSpan2{
+				height: 50%;
+			}
+			.revSpan2Alt{
+				height: 60%;
+			}
+			.revSpan3{
+				height: 75%;
+			}
+			.revSpan4{
+				height: 100%;
+			}
+
+			.revSpan1, .revSpan2, .revSpan3, .revSpan4, .revSpan1Alt, .revSpan2Alt{
+				padding-top: 5px;
+				padding-bottom: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12{
+				padding-left: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.bigName{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+			}
+
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+
+			li{
+				display: inline-block;
+			}
+
+			table{
+				color: white;
+			}
+
+			.nextTweet{
+			  float: left;
+			  border-bottom: 1px solid #ccc;
+			  width: 100%;
+			  padding: 5px 0px;
+			}
+
+			#stories > .nextTweet{
+				color: white;
+				font-family: 'PT Sans Caption', sans-serif;
+				margin-bottom: 10px;
+				padding: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.timelinePic{
+				float: left;
+				background: #eee;
+				max-width: 200px !important;
+				width: 24%;
+				text-align: center;
+			}
+
+			#stories > .nextTweet > .timelinePic{
+				display: none;
+			}
+
+			.timelineTweets{
+				float: left;
+				width: 75%;  
+				line-height: 21px;
+			}
+
+			#stories > .nextTweet > .timelineTweets{
+				float: left;
+				width: 100%;  
+				line-height: 21px;
+			}
+
+			.top{
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.bottom{
+				color: #eee;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			#displayTitle, #displayTitleSearch{
+				font-size: 40px;
+				text-shadow:1px 1px 2px #333333;
+			}
+
+			#displayTweets, #displayTweetsSearch{
+				font-size: 40px;
+				text-shadow:1px 1px 2px #333333;
+			}
+
+			#displayTitle, #displayTweets, #displayTitleSearch, #displayTweetsSearch{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				padding: 10px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#displayUser{
+				padding: 10px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#displayTwitterName, #displayTwitterNameSearch{
+				font-size: 40px;
+				text-shadow:1px 1px 2px #333333;
+			}
+
+			#displayTwitterDescription, #displayTwitterDescriptionSearch{
+				font-size: 15px;
+				text-shadow:1px 1px 2px #333333;
+			}
+
+			#displayTwitterName, #displayTwitterDescription, #displayTwitterNameSearch, #displayTwitterDescriptionSearch, #time{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				padding: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.twitterPic{
+				border-radius: 50%;
+				height: 100%; 
+				width: auto; 
+			}
+
+			.twitterPicLarge{
+				border-radius: 50%;
+				height: 100%; 
+				width: auto; 
+			}
+
+			.timeline_MentionsPic{
+				height: auto;
+				width: 70%;
+				border-radius: 50%;
+			}
+
+			#twitter{
+				background: #2c3e50;
+				background-size: cover;
+				background-position: center top;
+			}
+
+			#twitterTopText{
+				background: rgba(0,0,0,0.6);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			#time{
+				color: white;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 70px;
+				line-height: 71px;
+				font-weight: bold;
+			}
+
+			#clock{
+				font-size: 100px;
+				padding-top: 10px;
+			}
+
+			#date{
+				text-overflow: ellipsis;
+			}
+
+			#other{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 25px;
+			}
+
+			.newsStroies{
+				color: white;
+				font-family: 'PT Sans Caption', sans-serif;
+				margin-bottom: 10px;
+				padding: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				
+			}
+
+			.newsTitle{
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			.newsPublish{
+				font-size: 12px;
+				font-weight: bold;
+			}
+
+			.newsAuthor{
+				font-size: 10px;
+				font-weight: bold;
+			}
+
+			.center{
+				text-align: center;
+			}
+
+			#mainName{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 30px;
+				text-shadow:1px 1px 2px #333333;
+			}
+
+			#end{
+				color: #fff;
+				font-family: 'PT Sans Caption', sans-serif;
+				font-size: 15px;
+			}
+
+			/*change box dimentions*/
+			#profilePic{
+				background: #34495e;
+				position: relative;
+				top: -999px;
+				background-size: cover;
+			}
+
+			#weather{
+				background: #2980b9;
+				border-left: 5px solid #fff;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				position: relative;
+				top: -999px;
+			}
+
+			#tweets{
+				background: #2980b9;
+				border-top: 5px solid #fff;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				position: relative;
+				left: -999px;
+			}
+
+			#news{
+				background: #34495e;
+				border-bottom: 5px solid #fff;
+				border-right: 5px solid #fff;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				position: relative;
+				right: -999px;
+				overflow: hidden;
+			}
+
+			#end{
+				background: #2c3e50;
+				border-right: 5px solid #fff;
+				padding: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				position: relative;
+				right: -999px;
+			}
+
+			#time{
+				background: #2980b9;
+				border-bottom: 5px solid #fff;
+				border-left: 5px solid #fff;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#other{
+				background: #2980b9;
+				border-left: 5px solid #fff;
+				padding: 5px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.breakBox{
+				padding-top: 0px !important;
+				padding-left: 0px !important;
+				padding-bottom: 0px !important;
+				margin-top: 0 !important;
+				maring-bottom: 0 !important;
+				-webkit-box-sizing: border-box !important;
+				-moz-box-sizing: border-box !important;
+				box-sizing: border-box !important;
+			}
+
+			#containMobile{
+				display: none;
+			}
+
+			#hideTweets{
+				background: #eee; 
+				font-family: "Muli", sans-serif; 
+				font-weight: 400; 
+				font-size: 13px; 
+				position: absolute; 
+				top: 0; 
+				left: 0; 
+				z-index: 2;
+			}
+
+			#experience{
+				text-align: center;
+				
+				margin: 0 auto;
+				margin-top: -120px;
+				height: 100%;
+				width: 100%;
+
+				position: absolute;
+				top: 50%;
+			}
+
+			#mass{
+				font-size: 120px;
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+				background-color: #aaa;
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+				background-clip: text;
+				color: rgba(0, 0, 0, 0.3);
+				text-shadow: rgba(255,255,255,0.3) 5px 5px 5px;
+			}
+
+			#owner{
+				font-size: 30px;
+				font-family: "Muli", sans-serif; 
+			}
+
+			#freezeList, #freezeMention{
+				background: #eee;
+				border-right: 1px solid #ccc; 
+				-webkit-box-sizing: border-box; 
+				width: 37.5% !important; 
+				/*position: relative; 
+				left: -1999px;*/
+				display: none;
+			}
+
+			#freezeTrend{
+				border-right: 1px solid #ccc; 
+				-webkit-box-sizing: border-box; 
+				/*position: relative; 
+				left: -1999px;*/
+				display: none;
+			}
+
+			#trends{
+				padding: 5%; 
+				-webkit-box-sizing: border-box;
+			}
+
+			#middleBox{
+				background: #eee; 
+				border: none; 
+				position: absolute; 
+				z-index: 1000; 
+				display: block;
+				padding: 0;
+				margin: 0;
+
+				height: 95%;
+			}
+
+			#loadWebpage{
+				background: #eee; 
+				font-family: "Muli", sans-serif; 
+				font-weight: 400; 
+				font-size: 13px; 
+				position: absolute; 
+				top: 0; 
+				left: 0; 
+				z-index: 1;
+			}
+
+			#closeBox{
+				background: #000;
+				color: #fff;
+				height: 2.5%;
+				padding: 2.5%;
+				text-align: right;
+
+				position: absolute;
+				bottom: 0;
+			}
+
+			#closeBox:hover{
+				color: #2980b9;
+			}
+
+			.profilePicBending, .weatherBending{
+				animation-name: divTopBending;
+				-webkit-animation-name: divTopBending; /* Safari and Chrome */
+				animation-duration: 1s;
+				-webkit-animation-duration: 1s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divTopBending{
+				from { top: 0px; }
+				to { top: -999px; }
+			}
+
+			@-webkit-keyframes divTopBending{
+				from { top: 0px; }
+				to { top: -999px; }
+			}
+
+			.tweetsBending{
+				animation-name: divLeftBending;
+				-webkit-animation-name: divLeftBending; /* Safari and Chrome */
+				animation-duration: .5s;
+				-webkit-animation-duration: .5s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divLeftBending{
+				from { left: 0px; }
+				to { left: -999px; }
+			}
+
+			@-webkit-keyframes divLeftBending{
+				from { left: 0px; }
+				to { left: -999px; }
+			}
+
+			.newsBending, .endBending{
+				animation-name: divRightBending;
+				-webkit-animation-name: divRightBending; /* Safari and Chrome */
+				animation-duration: 1s;
+				-webkit-animation-duration: 1s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divRightBending{
+				from { right: 0px; }
+				to { right: -999px; }
+			}
+
+			@-webkit-keyframes divRightBending{
+				from { right: 0px; }
+				to { right: -999px; }
+			}
+
+			.viewTwoBending{
+				animation-name: viewTwoBending;
+				-webkit-animation-name: viewTwoBending; /* Safari and Chrome */
+				animation-duration: 2s;
+				-webkit-animation-duration: 2s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes viewTwoBending{
+				from { left: 0px; }
+				to { left: -1999px; }
+			}
+
+			@-webkit-keyframes viewTwoBending{
+				from { left: 0px; }
+				to { left: -1999px; }
+			}
+
+			.viewTwoBendingBack{
+				animation-name: viewTwoBendingBack;
+				-webkit-animation-name: viewTwoBendingBack; /* Safari and Chrome */
+				animation-duration: 3s;
+				-webkit-animation-duration: 3s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes viewTwoBendingBack{
+				from { left: -1999px; }
+				to { left: 0px; }
+			}
+
+			@-webkit-keyframes viewTwoBendingBack{
+				from { left: -1999px; }
+				to { left: 0px; }
+			}
+
+
+			.profilePicBendingBack, .weatherBendingBack{
+				animation-name: divTopBendingBack;
+				-webkit-animation-name: divTopBendingBack; /* Safari and Chrome */
+				animation-duration: 1s;
+				-webkit-animation-duration: 1s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divTopBendingBack{
+				from { top: -999px; }
+				to { top: 0px; }
+			}
+
+			@-webkit-keyframes divTopBendingBack{
+				from { top: -999px; }
+				to { top: 0px; }
+			}
+
+			.tweetsBendingBack{
+				animation-name: divLeftBendingBack;
+				-webkit-animation-name: divLeftBendingBack; /* Safari and Chrome */
+				animation-duration: 1s;
+				-webkit-animation-duration: 1s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divLeftBendingBack{
+				from { left: -999px; }
+				to { left: 0px; }
+			}
+
+			@-webkit-keyframes divLeftBendingBack{
+				from { left: -999px; }
+				to { left: 0px; }
+			}
+
+			.newsBendingBack, .endBendingBack{
+				animation-name: divRightBendingBack;
+				-webkit-animation-name: divRightBendingBack; /* Safari and Chrome */
+				animation-duration: 1s;
+				-webkit-animation-duration: 1s; /* Safari and Chrome */
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease; /* Safari and Chrome */
+				animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+			}
+
+			@keyframes divRightBendingBack{
+				from { right: -999px; }
+				to { right: 0px; }
+			}
+
+			@-webkit-keyframes divRightBendingBack{
+				from { right: -999px; }
+				to { right: 0px; }
+			}
+
+		}
+		@media only screen and (max-width: 600px){
+
+			.footer{
+				display: none !important;
+			}
+
+			#loadWebpage{
+				display: none !important;
+			}
+
+			#profilePic{
+				display: none;
+			}
+
+			#mainPicture{
+				float: left;
+				width: 200px;
+				width: 25%;
+			}
+
+			#mainName{
+				float: left;
+				width: 75%;
+			}
+
+			#weather{
+				display: none;
+			}
+
+			.twitterPicLarge{
+				border-radius: 50%;
+				float: left;
+				width: 100%;
+			}
+
+			#twitter{
+				background: #2980b9;
+				border: 5px solid #fff;
+				float: left;
+				font-family: 'PT Sans Caption', sans-serif;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				height: 100%;
+				padding: 3%;
+				width: 100%;
+			}
+
+			#time{
+				display: none;
+			}
+
+			#other{
+				display: none;
+			}
+
+			#news{
+				display: none;
+			}
+
+			#end{
+				display: none;
+			}
+
+			#hideTweets{
+				display: none;
+			}
+
+			#displayTitle{
+				font-size: 30px;
+				height: 15%;
+			}
+
+			#displayTweets{
+				height: 55%;
+				padding: 1%;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#displayUser{
+				height: 30%;
+			}
+
+			#displayTwitterPic{
+				float: left;
+				width: 25%;
+			}
+
+			#displayTwitterName{
+				float: left;
+				width: 75%;
+			}
+
+			#displayTwitterDescription{
+				float: left;
+				width: 75%;
+			}
+
+			input{
+				display: none;
+			}
+
+		}
+		
