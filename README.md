@@ -23,8 +23,8 @@ Once you have created a developer account get the:
 
 	"consumer_key"
 	"consumer_secret"
-  "access_token_key"
-  "access_token_secret"
+  	"access_token_key"
+  	"access_token_secret"
 
 and insert them in the config.json file
 
@@ -32,6 +32,7 @@ Step Two
 ================================================================
 
 Open your terminal if using a Mac or Linux - find the folder location
+	
 	ls and cd are your friend
 	once found and in the folder type in node app.js
 	in your web browser run 127.0.0.1:8000
@@ -49,7 +50,8 @@ If you want to run it online, for anywhere pleasure, I would highly suggest appf
 Step Three
 ================================================================
 
-Your twitter timeline, mentions and trends will automatically be generated (you can comment out the functions "names" in app.js to remove)
+Twitter timeline, Mentions and Trends 
+will automatically be generated <br>(you can comment out the functions "names" in app.js to remove)
 
 Create a List on Twitter called Dev - Add whoever you are interested in to your dev list for 
 Create a List on Twitter called Crew - Add the people you are most interested in/ most check twitter users in this list (friends, news, blogs, whatever)
