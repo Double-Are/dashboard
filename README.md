@@ -3,6 +3,9 @@ Dashboard - project
 
 A real-time dashboard of your twitter timeline, lists, mentions and relevant topics. 
 
+http://doubleare.aws.af.cm/demo 
+Demo (test version)
+
 http://doubleare.aws.af.cm/intro 
 Video (changes have been made since that version)
 
